@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Flashcards Website" />
+    <meta name="keywords" content="Flashcards, Ecosystem, Species" />
+    <meta name="author" content="Swatilekha Roy" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Style -->
+    <link rel="stylesheet" type="text/css" href="style.css" />
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="assets/favicon.png" type="image/x-icon" />
+    <!-- Title of Website -->
+    <title>My Ecosystem Website</title>
+
+    <!-- Font Awesome Icons -->
+    <script
+      src="https://kit.fontawesome.com/26bc379f29.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <!-- Website Content -->
+  <body onload="getRandom()">
+    <!-- Header -->
+    <header>
+      <img
+        src="assets/logo.png"
+        alt="logo"
+        width="250px"
+        style="display: inline !important"
+      />
+      <span><a href="index.html">Home</a></span>
+      <span
+        ><a href="https://education.nationalgeographic.org/resource/ecosystem"
+          >About Ecosystem</a
+        ></span
+      >
+      <span
+        ><a href="https://www.worldwildlife.org/species"
+          >Species Database</a
+        ></span
+      >
+      <span><a href="#">Flashcards</a></span>
+    </header>
+
+    <!-- Flashcards -->
+    <div>
+      <div id="flashcard-definition">
+        <p>
+          Definition
+        </p>
+      </div>
+      <div id="flashcard-term">
+        <h2>
+          Term
+        </h2>
+      </div>
+    </div>
+    <div class="flashcard-btn">
+      <button type="button" id="flash-term-btn" onclick="showterm()">Show Answer</button>
+      <button type="button" onclick="getRandom()">Next Flashcard</button>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      <p>
+        Made with <i class="fa fa-duotone fa-heart"></i> by Swatilekha, 2022
+      </p>
+    </footer>
+
+    <!-- Script -->
+    <script src="script.js"></script>
+  </body>
+</html>

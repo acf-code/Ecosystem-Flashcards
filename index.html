@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+  <!-- Head, contains important information about the website -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Flashcards Website" />
+    <meta name="keywords" content="Flashcards, Ecosystem, Species" />
+    <meta name="author" content="Swatilekha Roy" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Style -->
+    <link rel="stylesheet" type="text/css" href="style.css" />
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="assets/favicon.png" type="image/x-icon" />
+    <!-- Title of Website -->
+    <title>My Ecosystem Website</title>
+
+    <!-- Font Awesome Icons -->
+    <script
+      src="https://kit.fontawesome.com/26bc379f29.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <!-- Contains all the website content -->
+  <body>
+    <!-- Header -->
+    <header>
+      <img
+        src="assets/logo.png"
+        alt="logo"
+        width="250px"
+        style="display: inline !important"
+      />
+      <span><a href="/">Home</a></span>
+      <span
+        ><a href="https://education.nationalgeographic.org/resource/ecosystem"
+          >About Ecosystem</a
+        ></span
+      >
+      <span
+        ><a href="https://www.worldwildlife.org/species"
+          >Species Database</a
+        ></span
+      >
+      <span><a href="flashcard.html">Flashcards</a></span>
+    </header>
+
+    <h1>I heart Mama Earth!</h1>
+
+    <!-- Ecosystem Alert -->
+    <div id="howmanyspecies">
+      <h2>How many Endangered Species Names do you know?</h2>
+      <form>
+        <label for="name">Enter Your Name</label>
+        <input type="text" name="name" id="username" placeholder="Swatilekha" />
+        <label for="numberofspecies">Number of Species</label>
+        <input
+          type="number"
+          name="numberofspecies"
+          id="usernumberofspecies"
+          placeholder="5"
+        />
+        <button onclick="welcomealert()">Click Me</button>
+      </form>
+    </div>
+
+    <!-- Ecosystem Media -->
+    <div class="media">
+      <h2>Ecosystem Media</h2>
+
+      <h3>Environment-based Jokes</h3>
+      <!-- Environment Jokes -->
+      <!-- More environment-based jokes at https://www.cartoonstock.com/directory/e/endangered_animals.asp -->
+      <img
+        src="https://s3.amazonaws.com/lowres.cartoonstock.com/animals-dino-dinosaur-cloud_network-cloud_networking-endangered_animals-llan1948_low.jpg"
+        alt="Environemnt-based Joke 1"
+      />
+      <img
+        src="https://s3.amazonaws.com/lowres.cartoonstock.com/animals-lobbyist-lobby-conservationists-list-endangered_animal-dcrn1365_low.jpg"
+        alt="Environemnt-based Joke 2"
+      />
+      <img
+        src="https://s3.amazonaws.com/lowres.cartoonstock.com/animals-solar_power-solar_panel-endangered_animals-climate_change-environment-mlyn3372_low.jpg"
+        alt="Environemnt-based Joke 3"
+      />
+      <img
+        src="https://s3.amazonaws.com/lowres.cartoonstock.com/animals-global_warming-environmentalist-dinosaur-dino-prehistoric-rhan707_low.jpg"
+        alt="Environemnt-based Joke 4"
+      />
+      <img
+        src="https://s3.amazonaws.com/lowres.cartoonstock.com/animals-endangered_animal-endangered_species-cod-fishing_supplies-environmentalist-rmon2308_low.jpg"
+        alt="Environemnt-based Joke 5"
+      />
+
+      <br />
+
+      <h3>More Media</h3>
+      <!-- Audio -->
+      <!-- <audio controls>
+        <source src="assets/animalsound.mp3" type="audio/mpeg" />
+      </audio> -->
+      <button onclick="playsound()">Click For Sound</button>
+      <br />
+
+      <!-- Video -->
+      <video width="30%" controls autoplay>
+        <source src="assets/alpacavideo.mp4" />
+      </video>
+
+      <!-- Youtube Embed -->
+      <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/RBdLF0JlvW8"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      ></iframe>
+    </div>
+
+    <!-- Species List -->
+    <div id="hidenseek">
+      <h2>Species Hide n' Seek</h2>
+      <ul>
+        <li>
+          <img
+            src="assets/giraffe.png"
+            alt="Giraffe"
+            width="100px"
+            id="giraffe"
+          />
+          <button id="giraffebtn" onclick="showgiraffe()">Show Giraffe</button>
+        </li>
+
+        <li>
+          <img src="assets/monkey.png" alt="Monkey" width="100px" id="monkey" />
+          <button id="monkeybtn" onclick="showmonkey()">Show Monkey</button>
+        </li>
+
+        <li>
+          <img src="assets/sloth.png" alt="Sloth" width="100px" id="sloth" />
+          <button id="slothbtn" onclick="showsloth()">Show Sloth</button>
+        </li>
+
+        <li>
+          <img
+            src="assets/panda.png"
+            alt="Panda"
+            width="100px"
+            class="pspecies"
+          />
+          <img
+            src="assets/peacock.png"
+            alt="Peacock"
+            width="100px"
+            class="pspecies"
+          />
+          <img
+            src="assets/penguin.png"
+            alt="Penguin"
+            width="100px"
+            class="pspecies"
+          />
+          <button id="pspeciesbtn" onclick="showp()">
+            Show 3 Species starting with "P"
+          </button>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      <p>
+        Made with <i class="fa fa-duotone fa-heart"></i> by Swatilekha, 2022
+      </p>
+    </footer>
+
+    <!-- Script -->
+    <script src="script.js"></script>
+  </body>
+</html>
